@@ -8,7 +8,7 @@
  */
 ; (function (root, factory) {
     if (typeof root.define === 'function' && root.define.amd) {
-        root.define(['umeditor', 'angular'], factory);
+        root.define(['UMeditor', 'angular'], factory);
     } else factory(UM);
 }(window, function (um) {
     'use strict';
