@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Scripts/umeditor/themes/default/css/umeditor.css" rel="stylesheet" />
+</head>
+<body ng-controller="helloCtrl">
+    <div umeditor ng-model="user"></div>
+    <textarea ng-model="user"></textarea>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/umeditor/umeditor.config.js"></script>
+    <script src="Scripts/umeditor/umeditor.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-umeditor.min.js"></script>
+    <script>
+        angular.module('myApp', ['ng.umeditor']).controller('helloCtrl', function ($scope) {
+            $scope.user = '<h1>测试a1B2C3</h1>';
+        });
+        angular.bootstrap(document, ['myApp']);
+    </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0123398-AA61-484C-9970-8FD34F43C238}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Angular.UMeditor</RootNamespace>
+    <AssemblyName>Angular.UMeditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-umeditor.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\angular-umeditor.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\emotion.css" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\emotion.js" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\0.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="Scripts\umeditor\dialogs\formula\formula.css" />
+    <Content Include="Scripts\umeditor\dialogs\formula\formula.html" />
+    <Content Include="Scripts\umeditor\dialogs\formula\formula.js" />
+    <Content Include="Scripts\umeditor\dialogs\formula\images\formula.png" />
+    <Content Include="Scripts\umeditor\dialogs\image\image.css" />
+    <Content Include="Scripts\umeditor\dialogs\image\image.js" />
+    <Content Include="Scripts\umeditor\dialogs\image\images\close.png" />
+    <Content Include="Scripts\umeditor\dialogs\image\images\upload1.png" />
+    <Content Include="Scripts\umeditor\dialogs\image\images\upload2.png" />
+    <Content Include="Scripts\umeditor\dialogs\link\link.js" />
+    <Content Include="Scripts\umeditor\dialogs\map\map.html" />
+    <Content Include="Scripts\umeditor\dialogs\map\map.js" />
+    <Content Include="Scripts\umeditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Scripts\umeditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Scripts\umeditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Scripts\umeditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Scripts\umeditor\dialogs\video\video.css" />
+    <Content Include="Scripts\umeditor\dialogs\video\video.js" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\images\copy.png" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\images\music.png" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\images\upload.png" />
+    <Content Include="Scripts\umeditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="Scripts\umeditor\themes\default\css\umeditor.css" />
+    <Content Include="Scripts\umeditor\themes\default\css\umeditor.min.css" />
+    <Content Include="Scripts\umeditor\themes\default\images\caret.png" />
+    <Content Include="Scripts\umeditor\themes\default\images\close.png" />
+    <Content Include="Scripts\umeditor\themes\default\images\icons.gif" />
+    <Content Include="Scripts\umeditor\themes\default\images\icons.png" />
+    <Content Include="Scripts\umeditor\themes\default\images\ok.gif" />
+    <Content Include="Scripts\umeditor\themes\default\images\pop-bg.png" />
+    <Content Include="Scripts\umeditor\themes\default\images\spacer.gif" />
+    <Content Include="Scripts\umeditor\themes\default\images\videologo.gif" />
+    <Content Include="Scripts\umeditor\third-party\jquery.min.js" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\STIXFontLicense2010.txt" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.svg" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.svg" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.svg" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.svg" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\Symbola.svg" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\Symbola.woff" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\Symbola.ttf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\Symbola.otf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\Symbola.eot" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.woff" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.ttf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralitalic-webfont.eot" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.woff" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.ttf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbolita-webfont.eot" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.woff" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.ttf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneralbol-webfont.eot" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.woff" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.ttf" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\font\stixgeneral-bundle\stixgeneral-webfont.eot" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+    <Content Include="README.MD" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\umeditor\third-party\mathquill\mathquill.css" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\mathquill.js" />
+    <Content Include="Scripts\umeditor\third-party\mathquill\mathquill.min.js" />
+    <Content Include="Scripts\umeditor\umeditor.config.js" />
+    <Content Include="Scripts\umeditor\umeditor.js" />
+    <Content Include="Scripts\umeditor\umeditor.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>12225</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:12225/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
