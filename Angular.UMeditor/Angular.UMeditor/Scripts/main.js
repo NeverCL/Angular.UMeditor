@@ -7,20 +7,17 @@
 
 require.config({
     paths: {
-        'umeditorCfg': 'umeditor/umeditor.config',
         'UMeditor': 'umeditor/umeditor.min'
     },
     shim: {
         'UMeditor': {
-            deps: ['umeditorCfg', 'jquery'],
+            deps: ['umeditor/umeditor.config', 'jquery'],
             exports: 'UM'
         }
     }
 });
 
-require(['UMeditor', 'angular-umeditor.min', 'css!umeditor/themes/default/css/umeditor.min'], function () {
-    angular.module('myApp', ['ng.umeditor']).controller('helloCtrl', function ($scope) {
-        $scope.user = '<h1>测试a1B2C3</h1>';
-    });
+require(['angular-umeditor.min', 'css!umeditor/themes/default/css/umeditor.min'], function () {
+    angular.module('myApp', ['ng.umeditor']);
     angular.bootstrap(document, ['myApp']);
 });
